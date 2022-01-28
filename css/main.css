@@ -1,4 +1,159 @@
+:root{
+   --h1Color: #A0A0A0;
+   --h2Color: #909090;
+   --h2Border: #A0A0A0;
+   --h2Background: #F0F0F0;
+   --btnPrimaryColor: #FFFFFF;
+   --btnPrimaryBackground: #1DAA48;
+   --btnPrimaryBorder: #227A3C;
+   --btnSecondaryColor: #FFFFFF;
+   --btnSecondaryBackground: #0C0C0C;
+   --btnSecondaryBorder: #0C0C0C;
+   --btnTertiaryColor: #FFFFFF;
+   --btnTertiaryBackground: #001fcf;
+   --btnTertiaryBorder: #0b0070;
+   --formControlBackground: #F9F9F9;
+   --formControlBorder: #A0A0A0;
+}
+
 *{ box-sizing: border-box; padding: 0; margin: 0; }
 html{ font-size: 62.5%; }
-body{ font-size: 1.6rem; }
+body{ font-size: 1.6rem; font-family: Calibri }
 
+h1{
+   text-align: center;
+   font-size: 3.6rem;
+   color: var(--h1Color);
+   margin-top: 1.5rem;
+   margin-bottom: 0.5rem;
+}
+
+h2{
+   text-align: start;
+   color: var(--h2Color);
+   border-bottom: 3px solid var(--h2Border);
+   margin-top: 1rem;
+   margin-bottom: 0.5rem;
+   background-color: var(--h2Background);
+}
+
+.btn-primary{
+   color: var(--btnPrimaryColor);
+   background-color: var(--btnPrimaryBackground);
+   padding: 0.7rem;
+   border-radius: 5px;
+   border: 1px solid var(--btnPrimaryBorder);
+   font-weight: 500;
+   cursor: pointer;
+}
+
+.btn-primary:hover{
+   background-color: var(--btnPrimaryBorder);
+   border: 1px solid var(--btnPrimaryBackground);
+}
+
+.btn-secondary{
+   color: var(--btnSecondaryColor);
+   background-color: var(--btnSecondaryBackground);
+   padding: 0.7rem;
+   border-radius: 5px;
+   border: 1px solid var(--btnSecondaryBorder);
+   cursor: pointer;
+}
+
+.btn-secondary:hover{
+   color: var(--btnSecondaryBackground);
+   background-color: var(--formControlBorder);
+}
+
+.btn-tertiary{
+   color: var(--btnTertiaryColor);
+   background-color: var(--btnTertiaryBackground);
+   padding: 0.7rem;
+   border-radius: 5px;
+   border: 1px solid var(--btnTertiaryBorder);
+   cursor: pointer;
+}
+
+.btn-tertiary:hover{
+   background-color: var(--btnTertiaryBorder);
+   border: 1px solid var(--btnTertiaryBackground);
+}
+
+.form-control{
+   padding: 0.7rem;
+   border-radius: 5px;
+   background-color: var(--formControlBackground);
+   border: 1px solid var(--formControlBorder);
+   width: 20rem;
+   margin-left: 1rem;
+   margin-right: 1rem;
+}
+
+.form-control:focus-visible{
+   outline: 1px solid #5F5F5F;;
+}
+
+
+
+.navbar{
+   background-color: #000000;
+   margin: 0.6rem 0;
+}
+
+.navbar ul{
+	display: flex;
+	list-style: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.navbar ul li{
+   padding: 1.5rem;
+}
+
+.navbar ul li a{
+   text-decoration: none;
+	cursor: pointer;
+   color: #FFFFFF;
+   font-weight: 500;
+   font-size: 1.8rem;
+   padding: 1.5rem;
+}
+
+.navbar ul li a:hover{
+   background-color: #909090;
+	cursor: pointer;
+   color: #0C0C0C;
+   font-weight: 700;
+}
+
+section{
+   margin-top: 2rem;
+}
+
+.form-triangulo{
+   display: grid;
+   grid-template-columns: auto 1fr;
+   align-items: center;
+}
+
+.form-triangulo-button{
+   display: flex;
+   flex-direction: column;
+   position: absolute;
+   left: 52rem;
+   top: 30.5rem;
+}
+
+.form-triangulo-button button{
+   margin-top: 1rem;
+}
+
+.form-trianguloIsoseles-button{
+   display: flex;
+   flex-direction: column;
+   position: absolute;
+   left: 52rem;
+   top: 58.8rem;
+}
