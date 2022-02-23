@@ -4,103 +4,21 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Figuras Geom&eacute;tricas</title>
+   <title>Curso Pr&aacute;ctico JavaScript</title>
 
    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-   <header class="header">
-      <h1>Figuras Geom&eacute;tricas</h1>
-
-      <p>Este es el primer taller del curso pr&aacute;ctico de JavaScript</p>
-
+   <header>
+      <h1>Curso Pr&aacute;ctico de JavaScript</h1>
       <nav class="navbar">
          <ul>
-            <li><a href="#">Cuadrados</a></li>
-            <li><a href="#">Tri&aacute;ngulos</a></li>
-            <li><a href="#">Circulos</a></li>
+            <li><a href="./figurasGeometricas.html">Figuras Geom&eacute;tricas</a></li>
+            <li><a href="./preciosDescuentos.html">Precios y Descuentos</a></li>
+            <li><a href="./modaMediana.html">Promedio, Moda y Mediana</a></li>
+            <li><a href="#">An&aacute;lisis Salarial</a></li>
          </ul>
       </nav>
    </header>
-
-   <main>
-      <section class="section-cuadrado">
-         <h2>Calcula el &aacute;rea y per&iacute;metro de un cuadrado</h2>
-
-         <form class="formularios">
-            <label for="inputCuadrado">Escribe cuanto mide cada lado de un cuadrado:</label>
-            
-            <input type="number" id="inputCuadrado" class="form-control" />
-            
-            <button type="button" class="btn-primary" onclick="calcularPerimetroCuadrado()">Calcular Per&iacute;metro</button>
-
-            <button type="button" class="btn-secondary" onclick="calcularAreaCuadrado()">Calcular el &Aacute;rea</button>
-         </form>
-      </section>
-
-      <section class="section-triangulo">
-         <h2>Calcula el &aacute;rea y per&iacute;metro de un tri&aacute;ngulo</h2>
-
-         <form class="formularios">
-            <div class="form-triangulo">
-               <label for="inputTrianguloLado1">Escribe cuanto mide el lado 1 de un tri&aacute;ngulo:</label>
-               <input type="number" id="inputTrianguloLado1" class="form-control" />
-
-               <label for="inputTrianguloLado2">Escribe cuanto mide el lado 2 de un tri&aacute;ngulo:</label>
-               <input type="number" id="inputTrianguloLado2" class="form-control" />
-
-               <label for="inputTrianguloBase">Escribe cuanto mide la base de un tri&aacute;ngulo:</label>
-               <input type="number" id="inputTrianguloBase" class="form-control" />
-
-               <label for="inputTrianguloAltura">Escribe cuanto mide la altura del tri&aacute;ngulo:</label>
-               <input type="number" id="inputTrianguloAltura" class="form-control" />
-            </div>
-            
-            <div class="form-triangulo-button">
-               <button type="button" class="btn-primary" onclick="calcularPerimetroTriangulo()">Calcular Per&iacute;metro</button>
-
-               <button type="button" class="btn-secondary" onclick="calcularAreaTriangulo()">Calcular el &Aacute;rea</button>
-            </div>
-         </form>
-      </section>
-
-      <section class="section-Circulo">
-         <h2>Calcula el &aacute;rea y per&iacute;metro de un circulo</h2>
-
-         <form class="formularios">
-            <label for="inputCirculo">Escribe cuanto mide el radio de un circulo:</label>
-            <input type="number" id="inputCirculo" class="form-control" />
-         
-            <button type="button" class="btn-primary" onclick="calcularDiametroCirculo()">Calcular Diametro</button>
-
-            <button type="button" class="btn-tertiary" onclick="calcularCircunferenciaCirculo()">Calcular Circunferencia</button>
-
-            <button type="button" class="btn-secondary" onclick="calcularAreaCirculo()">Calcular el &Aacute;rea</button>
-         </form>
-      </section>
-
-      <section class="section-triangulo">
-         <h2>Calcula la altura de un tri&aacute;ngulo is&oacute;seles</h2>
-
-         <form class="formularios">
-            <div class="form-triangulo">
-               <label for="inputTrianguloIsoLado1">Escribe cuanto mide el lado 1 del tri&aacute;ngulo:</label>
-               <input type="number" id="inputTrianguloIsoLado1" class="form-control" />
-
-               <label for="inputTrianguloIsoLado2">Escribe cuanto mide el lado 2 del tri&aacute;ngulo:</label>
-               <input type="number" id="inputTrianguloIsoLado2" class="form-control" />
-
-               <label for="inputTrianguloIsoLado3">Escribe cuanto mide el lado 3 del tri&aacute;ngulo:</label>
-               <input type="number" id="inputTrianguloIsoLado3" class="form-control" />
-            </div>
-            
-            <div class="form-trianguloIsoseles-button">
-               <button type="button" class="btn-primary isoseles" onclick="calcularAlturaTriangulo()">Calcular Altura</button>
-            </div>
-         </form>
-      </section>
-   </main>
-
-   <script src="./js/main.js"></script>
 </body>
 </html>

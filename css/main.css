@@ -88,13 +88,12 @@ h2{
    width: 20rem;
    margin-left: 1rem;
    margin-right: 1rem;
+   margin-top: 3px;
 }
 
 .form-control:focus-visible{
-   outline: 1px solid #5F5F5F;;
+   outline: 2px solid #83c2e1;
 }
-
-
 
 .navbar{
    background-color: #000000;
@@ -126,34 +125,4 @@ h2{
 	cursor: pointer;
    color: #0C0C0C;
    font-weight: 700;
-}
-
-section{
-   margin-top: 2rem;
-}
-
-.form-triangulo{
-   display: grid;
-   grid-template-columns: auto 1fr;
-   align-items: center;
-}
-
-.form-triangulo-button{
-   display: flex;
-   flex-direction: column;
-   position: absolute;
-   left: 52rem;
-   top: 30.5rem;
-}
-
-.form-triangulo-button button{
-   margin-top: 1rem;
-}
-
-.form-trianguloIsoseles-button{
-   display: flex;
-   flex-direction: column;
-   position: absolute;
-   left: 52rem;
-   top: 58.8rem;
 }

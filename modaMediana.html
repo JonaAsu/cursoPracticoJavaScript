@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Precios y Descuentos</title>
+
+   <link rel="stylesheet" href="./css/main.css">
+   <link rel="stylesheet" href="./css/modaMediana.css">
+</head>
+<body>
+   <header>
+      <h1>Moda, Mediana y Promedio</h1>
+
+      <p>Este es el tercer taller del curso pr&aacute;ctico de JavaScript</p>
+   </header>
+
+   <main>
+      <section>
+         <h2>Media Aritm&eacute;tica</h2>
+
+         <form>
+            <div>
+               <label for="value-array">Valores de la nueva Lista:</label>
+               <input class="form-control" type="number" id="value-array">
+               
+               <button type="button" class="btn-tertiary" onclick="agregarValor()">Agregar valor</button>
+            </div>
+
+            <br />
+
+            <div>
+               <button type="button" class="btn-primary" onclick="mostrarArray()">Mostrar lista ingresada</button>
+
+               <span id="listaIngresada"></span>
+            </div>
+
+            <br />
+
+            <div>
+               <button type="button" class="btn-secondary" onclick="promedioCalcular()">Calcular Promedio</button>
+
+               <span id="mediaAritmetica"></span>
+            </div>
+
+            <br />
+
+            <div>
+               <button type="button" class="btn-secondary" onclick="medianaCalcular()">Calcular Mediana</button>
+
+               <span id="medianaCalculada"></span>
+            </div>
+
+            <br />
+
+            <div>
+               <button type="button" class="btn-secondary" onclick="modaCalcular()">Calcular Moda</button>
+
+               <span id="modaCalculada"></span>
+            </div>
+         </form>
+      </section>
+   </main>
+   
+   <script src="./js/modaMediana.js"></script>
+</body>
+</html>

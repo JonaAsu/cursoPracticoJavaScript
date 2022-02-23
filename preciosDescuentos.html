@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Precios y Descuentos</title>
+
+   <link rel="stylesheet" href="./css/main.css">
+   <link rel="stylesheet" href="./css/preciosDescuentos.css">
+</head>
+<body>
+   <header>
+      <h1>Precios y Descuentos</h1>
+
+      <p>Este es el segundo taller del curso pr&aacute;ctico de JavaScript</p>
+   </header>
+
+   <main>
+      <section>
+         <h2>Calcula el precio a pagar de tus productos con descuento</h2>
+
+         <form>
+            <div class="formPrecioDescuento">
+               <label for="inputPrice">Escriba el precio de tu producto:</label>
+               <input type="number" class="form-control" id="inputPrice" />
+
+               <label for="inputDiscount">Escriba el descuento del producto:</label>
+               <input type="number" class="form-control" id="inputDiscount" />
+               
+               <label for="inputCupon">Tienes un cup&oacute;n de descuento? Ingresalo!</label>
+               <input type="text" class="form-control" id="inputCupon" />
+            </div>
+
+            <div class="formPrecioDescuento-button">
+               <button type="button" class="btn-primary" onclick="fnPrecioDescuento()">Calcula el precio final</button>
+            </div>
+
+            <div>
+               <p id="cuponDescuento"></p>
+               <p id="resultPrice"></p>
+            </div>
+         </form>
+      </section>
+   </main>
+   
+   <script src="./js/preciosDescuentos.js"></script>
+</body>
+</html>
